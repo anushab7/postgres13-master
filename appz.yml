@@ -5,13 +5,13 @@ app:
     
 build:
     version: 13.X
-    env: DEV
+    env: QA
     build_file: none
     output_files: output/*.zip
     image_template: postgres_master-13.3
     
 deploy:
-    context: anushab7/DEV
+    context: anushab7/QA
     type: statefulset
     ingress: none
     replicas: 1
