@@ -17,13 +17,6 @@ databases:
         search_path: true
   - name: dotnet
     owner: dotnet
-    tablespace:
-      - name: tb2
-        location: /appz/data/tb2
-    schemas:
-      - name: public
-        authorised_user: dotnet
-        search_path: true
    
 restore:
   - database: springbootweb
@@ -31,4 +24,4 @@ restore:
       url: 'https://www.ecloudcontrol.com/wp-content/uploads/2021/06/accountsdb-springboot.sql_.zip'
     user: springbootweb
     password: $POSTGRESQL_SPRINGBOOTWEB_PASSWORD
-    token: 20220211-1635
+    token: 20220211-1648
