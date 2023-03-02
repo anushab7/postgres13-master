@@ -19,11 +19,11 @@ deploy:
     - 5432
     
 volumes:
-  - claim: postgres-master-data
-    mount: /appz/data
-    name: postgres-data
-    size: 5Gi
-    matchLabels: false
+   - claim: mysql-data
+     mount: /var/lib/mysql
+     name: data
+     size: 5Gi
+     matchLabels: false
     
 properties:
     POSTGRESQL_REPLICATION_MODE: master
