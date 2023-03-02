@@ -21,7 +21,7 @@ deploy:
 volumes:
   - claim: postgres-master-data
     mount: /appz/data
-    name: data
+    name: postgres-data
     size: 5Gi
     matchLabels: false
     
